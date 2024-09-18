@@ -2,53 +2,68 @@
 <html lang="en">
 <head>
 
-  <!-- Page Information
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Page Information -->
   <meta charset="utf-8">
   <title>BugBounty Argentina</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton-dark.css">
   <link rel="stylesheet" href="css/brands.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/logo.jpeg">
 
 </head>
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Primary Page Layout -->
   <div class="container">
     <div class="row">
-      <div class="column" style="margin-top: 10%">
-        <!-- Your Image Here -->
+      <div class="column" style="margin-top: 5%;"> <!-- Reduje el margen superior -->
+        
+        <!-- Estilos para centrar y ajustar el contenido -->
         <style>
           img.avatar {
             border: 2px solid white;
             border-radius: 100%;
-            width: 400px; /* Puedes cambiar este tamaño según lo que consideres adecuado */
+            width: 250px; /* Ajusté el tamaño del logo */
             height: auto;
+            margin-bottom: 20px; /* Espacio entre logo y texto */
           }
+          
           .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Ajustar la altura al tamaño de la ventana */
+            margin-bottom: 20px; /* Espacio entre la imagen y el contenido */
           }
+
+          .container {
+            max-width: 800px; /* Limité el ancho del contenedor */
+            margin: 0 auto; /* Centramos el contenido en la página */
+          }
+
+          h1, p {
+            text-align: center; /* Centramos el texto */
+            margin: 10px 0; /* Reducimos los márgenes del texto */
+          }
+
+          footer {
+            text-align: center;
+            padding: 3px;
+            color: white;
+            font-size: 12px;
+          }
+
           a.small {
             background: #1DA1F2;
             border-radius: 50px;
@@ -57,57 +72,22 @@
             text-decoration: none;
             height: 48px;
             padding: 0 16px;
-            text-align: center;
-            vertical-align: middle;
-            font-size: 18px;
             width: 300px;
             font-weight: 600;
             line-height: 48px;
             letter-spacing: 0.5px;
-            background-color: transparent;
-            border-radius: 8px;
             cursor: pointer;
-            box-sizing: border-box;
+            margin: 0 10px; /* Espacio entre los botones */
           }
-        .acuity-embed-button-local {
-          background: #3177ca;
-          padding: 8px 12px;
-          border: 0;
-          border-radius: 4px;
-          text-decoration: none;
-          display: inline-block;
-          text-decoration: none;
-          height: 48px;
-          padding: 0 16px;
-          text-align: center;
-          vertical-align: middle;
-          font-size: 18px;
-          width: 300px;
-          font-weight: 600;
-          line-height: 48px;
-          letter-spacing: 0.5px;
-          white-space: nowrap;
-          background-color: transparent;
-          border-radius: 8px;
-          cursor: pointer;
-          box-sizing: border-box;
-          color: #FFFFFF;
-          background-color: #0A66C2
-        }
 
-        .acuity-embed-button-local:focus {
-          filter: brightness(90%);
-          color: inherit; }
-          footer {
-            text-align: center;
-            padding: 3px;
-            color: white;
-            font-size: 12px;
+          .button-container {
+            text-align: center; /* Centra los botones de redes sociales */
+            margin-top: 20px; /* Espacio entre botones y contenido */
           }
         </style>
 
         <div class="image-container">
-        <img src="images/logorgb.png" srcset="images/logorgb.png  2x" class="avatar">
+          <img src="images/logorgb.png" srcset="images/logorgb.png  2x" class="avatar">
         </div>
 
         <!-- Your Name -->
@@ -116,10 +96,10 @@
         <!-- Short Bio -->
         <p>Comunidad creada por amantes de la seguridad informática y el hacking, dedicada a brindar un espacio donde podamos enseñar y aprender sobre el mundo del Bug Bounty. Un espacio donde podamos compartir un buen momento entre amigos.</p>
 
-        <!-- Replace # with your profile URL. Delete whatever you don't need & create your own brand styles in css/brands.css -->
-        <div>
-        <a class="small button-twitter" href="https://twitter.com/bugbounty_space"><img class="icon" src="icons/twitter.svg"></a>
-        <a class="small button-youtube" href="https://www.youtube.com/c/AlanLevy-ElMago"><img class="icon" src="icons/youtube.svg"></a>
+        <!-- Redes Sociales -->
+        <div class="button-container">
+          <a class="small button-twitter" href="https://twitter.com/bugbounty_space"><img class="icon" src="icons/twitter.svg"></a>
+          <a class="small button-youtube" href="https://www.youtube.com/c/AlanLevy-ElMago"><img class="icon" src="icons/youtube.svg"></a>
         </div>
 
         <footer>
@@ -140,7 +120,6 @@
   gtag('config', 'G-GR82G97BBQ');
 </script>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- End Document -->
 </body>
 </html>
